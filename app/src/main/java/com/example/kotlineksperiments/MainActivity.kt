@@ -14,8 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setSupportActionBar(toolbar)
-
         val adapter = PagerAdapter(supportFragmentManager)
         adapter.addFragment(FragmentOne(), "One")
         adapter.addFragment(FragmentTwo(), "Two")
