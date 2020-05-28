@@ -8,10 +8,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val themeState = ThemeState(this)
-        if (themeState.isDarkMode())
-            setTheme(R.style.AppThemeDark)
-        else
-            setTheme(R.style.AppThemeLight)
+        themeState.applyTheme()
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
