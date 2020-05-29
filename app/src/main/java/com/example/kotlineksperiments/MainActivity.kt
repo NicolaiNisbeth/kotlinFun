@@ -19,8 +19,10 @@ class MainActivity : AppCompatActivity() {
         recycler_view.setHasFixedSize(true)
 
         adapter.setOnItemClickListener(object : ExampleAdapter.OnItemClickListener{
+            val sheet = BottomSheet()
             override fun onItemClick(item: ExampleItem) {
-                BottomSheet(item).show(supportFragmentManager, "dialog")
+                sheet.item = item
+                sheet.show(supportFragmentManager, "dialog")
             }
         })
     }

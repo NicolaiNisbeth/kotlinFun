@@ -38,7 +38,7 @@ class ExampleAdapter(private val exampleList : List<ExampleItem>) : RecyclerView
     }
 
     interface OnItemClickListener {
-        fun onItemClick(item : ExampleItem)
+        fun onItemClick(item: ExampleItem)
     }
 
     fun setOnItemClickListener(listener : OnItemClickListener){

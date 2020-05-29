@@ -11,14 +11,14 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.bottom_sheet_dialog.view.*
 import kotlinx.android.synthetic.main.bottom_sheet_dialog.view.close_btn
 
-class BottomSheet(private val item: ExampleItem) : BottomSheetDialogFragment() {
+class BottomSheet : BottomSheetDialogFragment() {
+    lateinit var item: ExampleItem
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = super.onCreateDialog(savedInstanceState) as BottomSheetDialog
 
         val view = View.inflate(context, R.layout.bottom_sheet_dialog, null)
-        view.headline.text = item.headline
-        view.subtitle.text = item.subtitle
+        bindView(view)
         dialog.setContentView(view)
 
         view.root.layoutParams.height = getScreenHeight()
@@ -33,4 +33,10 @@ class BottomSheet(private val item: ExampleItem) : BottomSheetDialogFragment() {
 
     private fun getScreenHeight() =
         (Resources.getSystem().displayMetrics.heightPixels * 0.9).toInt()
+
+    private fun bindView(view: View) {
+        view.headline.text = item.headline
+        view.subtitle.text = item.subtitle
+    }
+
 }
