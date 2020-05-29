@@ -1,14 +1,14 @@
 Kotlin projects
-!! Empty Recycler View i kotlin
+!! Empty Recycler View in kotlin
 !! Tab layout
 !! Dark mode, white mode toggle
+!! Light component popup
 
 
 Polling
 	website client with +1 button
-	app there observes changes and adjust ui accordingly
+	app observes changes and adjust ui accordingly
 Fingerprint censor
-Light component popup
 Notifications - a simple alarm
 Dynamic image
 What is possible with broadcastReceiver?
