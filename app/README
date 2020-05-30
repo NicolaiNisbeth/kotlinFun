@@ -3,7 +3,7 @@ Kotlin projects
 !! Tab layout
 !! Dark mode, white mode toggle
 !! Light component popup
-
+ Single activity architecture + Nav graph
 
 Polling
 	website client with +1 button
@@ -12,8 +12,6 @@ Fingerprint censor
 Notifications - a simple alarm
 Dynamic image
 What is possible with broadcastReceiver?
-Single activity architecture
-Nav graph
 What is possible with firebase?
 No connection pop up
 Chat
