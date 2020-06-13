@@ -3,7 +3,7 @@ Kotlin projects
 !! Tab layout
 !! Dark mode, white mode toggle
 !! Light component popup
- Single activity architecture + Nav graph
+!! Single activity architecture + Nav graph
 
 Polling
 	website client with +1 button
